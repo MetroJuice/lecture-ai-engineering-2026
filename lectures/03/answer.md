@@ -19,11 +19,11 @@
 
 - 取り組んだレベル：基礎
 - やったこと：
-  agentのINSTRUCTIONS と tools の docstring をそれぞれ変えて、同じ質問"LoRAとQLoRAの違いは？"を --trace 付きで実行して比較した。
-  search_glossary の説明文が、検索の回数や回答に影響することを確認した。
--結果：
-  INSTRUCTIONS をほとんど消しても、ツールの説明と質問内容が強ければ、ツールは呼ばれることを確認した。
-  誤った docstring では、search_glossary({'query': 'LoRA QLoRA'}) のようにまとめて呼ぶようになり、回答が短くなった。
--気づき・疑問：
-  エージェント設計では、プロンプトとツール説明の両方が重要で、片方だけだと意図どおりに動かない。
-  「ツールを使うべきかどうか」は、質問の文脈とdocstringの書き方でかなり変わる。
+      agentのINSTRUCTIONS と tools の docstring をそれぞれ変えて、同じ質問"LoRAとQLoRAの違いは？"を --trace 付きで実行して比較した。
+      search_glossary の説明文が、検索の回数や回答に影響することを確認した。
+- 結果：
+      INSTRUCTIONS をほとんど消しても、ツールの説明と質問内容が強ければ、ツールは呼ばれることを確認した。
+      誤った docstring では、search_glossary({'query': 'LoRA QLoRA'}) のようにまとめて呼ぶようになり、回答が短くなった。
+- 気づき・疑問：
+      エージェント設計では、プロンプトとツール説明の両方が重要で、片方だけだと意図どおりに動かない。
+      「ツールを使うべきかどうか」は、質問の文脈とdocstringの書き方でかなり変わる。
